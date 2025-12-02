@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   </head>
 
   <body class="bg-gray-900">
-    <header class="py-4">
+    <header class="py-4 fixed top-0 left-0 w-full z-50">
       <div class="container mx-auto px-4 md:px-8 lg:px-12">
         <div
           class="backdrop-blur-md bg-white/25 rounded-full shadow-md flex items-center justify-between px-6 py-3"
@@ -25,28 +25,28 @@
           </h1>
           <nav class="flex gap-4">
             <a
-              href="#"
-              class="px-4 py-2 text-white rounded-full transition hover:bg-blue-500"
+              href="#home"
+              class="px-4 py-2 text-white rounded-full transition hover:bg-cyan-500"
             >
               Home
             </a>
             <a
-              href="#"
-              class="px-4 py-2 text-white rounded-full transition hover:bg-blue-500"
+              href="#features"
+              class="px-4 py-2 text-white rounded-full transition hover:bg-cyan-500"
             >
-              FAQ
+              Features
             </a>
             <a
-              href="#"
-              class="px-4 py-2 text-white rounded-full transition hover:bg-blue-500"
+              href="#pricing"
+              class="px-4 py-2 text-white rounded-full transition hover:bg-cyan-500"
             >
-              Contact us
+              Pricing
             </a>
             <a
-              href="#"
-              class="px-4 py-2 text-white rounded-full transition hover:bg-blue-500"
+              href="#testimonials"
+              class="px-4 py-2 text-white rounded-full transition hover:bg-cyan-500"
             >
-              Our Menu
+              Testimonial
             </a>
           </nav>
         </div>
@@ -54,7 +54,7 @@
     </header>
 
     <main>
-      <section class="text-white py-16 md:py-24">
+      <section id="home" class="text-white py-16 md:py-24">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
           <div
             class="flex flex-col md:flex-row items-center md:justify-between gap-12"
@@ -135,6 +135,85 @@
           </div>
         </div>
       </section>
+      <!-- Feature Section -->
+      <section id="features" class="text-white py-16 md:py-24">
+        <div
+          class="container mx-auto px-4 md:px-8 lg:px-12 flex flex-col lg:flex-row items-stretch"
+        >
+          <div class="grid sm:grid-cols-2 gap-8 items-stretch">
+            <img
+              src="https://www.domesticpreparedness.com/wp-content/uploads/2024/02/vecteezy_digital-marketing-global-business-cloud-computing-digital_25524266_crop.jpg"
+              class="h-full object-cover"
+            />
+            <div class="col-span-1">
+              <p
+                class="text-cyan-400 text-base sm:text-lg font-semibold uppercase tracking-wider mb-4"
+              >
+                Feature Point
+              </p>
+              <h2
+                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-normal mb-6"
+              >
+                Key Service Features Protecting You
+              </h2>
+              <p
+                class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto mr-0 ml-0"
+              >
+                Lorem ipsum dolor sit amet, consectetur congue metus quis
+                accumsan euismod. Maecenas sed est mollis, convallis nisi
+                convallis, imperdiet massa.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div
+                  class="bg-gray-800 p-8 rounded-xl border border-transparent flex flex-col items-center"
+                >
+                  <i class="fa-regular fa-id-card text-4xl mb-4"></i>
+                  <h3 class="text-xl font-bold mb-4">
+                    Cyber security Assessment
+                  </h3>
+                  <p class="text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum congue metus quis.
+                  </p>
+                </div>
+                <div
+                  class="bg-gray-800 p-8 rounded-xl border border-transparent flex flex-col items-center"
+                >
+                  <i class="fa-solid fa-chalkboard-user text-4xl mb-4"></i>
+                  <h3 class="text-xl font-bold mb-4">User Training Programs</h3>
+                  <p class="text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum congue metus quis.
+                  </p>
+                </div>
+                <div
+                  class="bg-gray-800 p-8 rounded-xl border border-transparent flex flex-col items-center"
+                >
+                  <i class="fa-solid fa-clock text-4xl mb-4"></i>
+                  <h3 class="text-xl font-bold mb-4">24/7 Incident Response</h3>
+                  <p class="text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum congue metus quis.
+                  </p>
+                </div>
+                <div
+                  class="bg-gray-800 p-8 rounded-xl border border-transparent flex flex-col items-center"
+                >
+                  <i class="fa-solid fa-building-lock text-4xl mb-4"></i>
+                  <h3 class="text-xl font-bold mb-4">
+                    Cyber security Assessment
+                  </h3>
+                  <p class="text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum congue metus quis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Service Section -->
       <section class="text-white py-16 md:py-24">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
@@ -207,7 +286,7 @@
       </section>
 
       <!-- Pricing Section  -->
-      <section class="text-white py-16 md:py-24">
+      <section id="pricing" class="text-white py-16 md:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <p
             class="text-center pt-4 pb-2 mb-4 font-semibold text-cyan-400 lg:text-center"
@@ -371,7 +450,7 @@
       </section>
 
       <!-- Testimonial Section -->
-      <section class="text-white py-16 md:py-24">
+      <section id="testimonials" class="text-white py-16 md:py-24">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
           <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
             <p
@@ -557,16 +636,16 @@
           <div class="flex flex-col text-white sm:items-start lg:items-center">
             <p class="text-xl mb-7 font-bold">Quick Links</p>
             <ul class="list-none space-y-4">
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$">Our Services</a>
               </li>
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$">About Us</a>
               </li>
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$">Pricing</a>
               </li>
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$">Testimonial</a>
               </li>
             </ul>
@@ -574,19 +653,19 @@
           <div class="flex flex-col text-white">
             <p class="text-xl mb-7 font-bold text-left">Contact Us</p>
             <ul class="list-none space-y-4">
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$"
                   ><i class="fa-regular fa-envelope mr-2"></i
                   >hello@website.com</a
                 >
               </li>
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$"
                   ><i class="fa-solid fa-location-dot mr-2"></i>333
                   Berlin,Germany</a
                 >
               </li>
-              <li class="hover:text-cyan-600 transition duration-200 shadow-md">
+              <li class="hover:text-cyan-600 transition duration-200">
                 <a href="$"
                   ><i class="fa-solid fa-phone mr-2"></i>+ 49 33333333</a
                 >
@@ -600,7 +679,7 @@
             >
               <p class="text-gray-500">Enter your Email</p>
               <button
-                class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition duration-200 shadow-md"
+                class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition duration-200"
               >
                 Subscribe
               </button>
